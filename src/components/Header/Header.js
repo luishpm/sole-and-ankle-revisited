@@ -33,8 +33,10 @@ const Header = () => {
         </Nav>
         <NavMobile>
           <Icon id="shopping-bag" strokeWidth={1} />
-          <Icon id="search" strokeWidth={1} />
-          <Icon id="menu" strokeWidth={1} />
+          <Icon id="search" strokeWidth={1} on />
+          <MenuButton onClick={() => setShowMobileMenu(!showMobileMenu)}>
+            <Icon id="menu" strokeWidth={1} />
+          </MenuButton>
         </NavMobile>
         <SideRight />
       </MainHeader>
@@ -106,6 +108,10 @@ const NavLink = styled.a`
   &:first-of-type {
     color: ${COLORS.secondary};
   }
+`;
+
+const MenuButton = styled.div`
+
 `;
 
 export default Header;
