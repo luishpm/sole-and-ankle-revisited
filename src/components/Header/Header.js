@@ -55,6 +55,8 @@ const MainHeader = styled.div`
   padding: 18px 32px;
   height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  overflow-y: hidden;
+  overflow-x: auto;
   @media ${QUERIES.tabletAndSmaller} {
     padding-left: 16px;
     padding-right: 16px;
@@ -70,7 +72,7 @@ const TopBorder = styled.hr`
 ` ;
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(1rem, -2.8776rem + 6.5306vw, 3rem);
   margin: 0 48px;
 
   @media ${QUERIES.tabletAndSmaller} {
