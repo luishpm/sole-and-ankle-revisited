@@ -90,7 +90,7 @@ const MenuNav = styled.div`
     text-decoration: none;
     
     :hover {
-      color: ${COLORS.secondary};
+      color: var(--color-secondary);
     }
   }
 `;
@@ -112,7 +112,7 @@ const Footer = styled.footer`
     line-height: 1rem;
 
     :hover {
-      color: ${COLORS.secondary};
+      color: var(--color-secondary);
     }
 `;
 
